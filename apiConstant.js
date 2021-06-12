@@ -1,0 +1,1 @@
+export const daily_horoscope_URL = "https://horoscope-api.herokuapp.com/horoscope/";
