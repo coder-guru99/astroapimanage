@@ -4,8 +4,7 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "postinstall": "npm run build",
-        "start": "node index.js"
+        "start": "npm run build && node index.js"
     },
     "dependencies": {
         "body-parser": "^1.19.0",
