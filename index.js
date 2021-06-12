@@ -47,6 +47,7 @@ App.get("/product", (req, res) => {
 });
 
 App.get("/dailyhoroscope", (req, res) => {
+    // to get the data from query params
     console.log("URLPARMA", req.query);
     const {
         type = "today",

@@ -1,0 +1,1 @@
+export const daily_horoscope_route = "/dailyhoroscope";
