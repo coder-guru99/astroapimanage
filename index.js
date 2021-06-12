@@ -4,6 +4,7 @@ import bodyParser from "body-parser";
 import { Database } from "./database.js";
 import { daily_horoscope_URL } from "./apiConstant.js";
 import fetch from "node-fetch";
+import { daily_horoscope_route } from "./utils/urls.js";
 const App = express();
 App.use(bodyParser.urlencoded({ extended: false }));
 App.use(bodyParser.json());
@@ -46,7 +47,7 @@ App.get("/product", (req, res) => {
     res.send(productData);
 });
 
-App.get("/dailyhoroscope", (req, res) => {
+App.get(daily_horoscope_route, (req, res) => {
     // to get the data from query params
     console.log("URLPARMA", req.query);
     const {
