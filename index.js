@@ -62,7 +62,6 @@ App.get(daily_horoscope_route, (req, res) => {
         })
             .then(res => res.json())
             .then(json => {
-                // Do something...
                 console.log(json);
                 res.json(json || {});
                 res.end();
@@ -84,9 +83,6 @@ App.get(daily_horoscope_route, (req, res) => {
 
 })
 
-const getData = async () => {
-
-}
 
 const PORT = process.env.PORT || 3000;
 App.listen(PORT, () => {
