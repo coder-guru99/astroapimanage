@@ -3,7 +3,9 @@
         "mantra": {
             "gods": [
                 {
+                    "id": "kngganesh-001",
                     "name": "Ganesh",
+                    "main_text": "ಗಣೇಶ್",
                     "stotra": [
                         {
                             "name": "ಶ್ರೀ ಮಹಾ ಗಣೇಶ ಪಂಚ ರತ್ನಂ",
@@ -12,7 +14,9 @@
                     ]
                 },
                 {
+                    "id": "kngvenkateswara-001",
                     "name": "Venkateswara",
+                    "main_text": "ಶ್ರೀ ವೇಂಕಟೇಶ್ವರ",
                     "stotra": [
                         {
                             "name": "ಶ್ರೀ ವೇಂಕಟೇಶ್ವರ ಸ್ತೋತ್ರಂ",
