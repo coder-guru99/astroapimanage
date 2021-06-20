@@ -1,6 +1,7 @@
 // const express = require("express");
 import express from "express";
 import bodyParser from "body-parser";
+import fs from "fs";
 import { Database } from "./database.js";
 import { daily_horoscope_URL } from "./apiConstant.js";
 import fetch from "node-fetch";
@@ -9,6 +10,9 @@ const App = express();
 App.use(bodyParser.urlencoded({ extended: false }));
 App.use(bodyParser.json());
 // Database();
+//JSON Imports
+// import mantra from "./utils/Mantra.json";
+let mantraData = JSON.parse(fs.readFileSync('./utils/Mantra.json', 'utf-8'))
 const productData = [
     {
         id: 1234,
@@ -83,8 +87,12 @@ App.get(daily_horoscope_route, (req, res) => {
 
 })
 
+App.get("/mantra", (req, res) => {
+    res.json(mantraData);
+});
 
-const PORT = process.env.PORT || 3000;
+
+const PORT = process.env.PORT || 3001;
 App.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
